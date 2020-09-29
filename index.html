@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
     <title>Calorie-Tracker</title>
   </head>
   <body>
@@ -17,10 +18,10 @@
         overwhelmed and confused with the conflicting information. The case has
         been made by varying proponents to go low-carb, vegan, carnivore,
         low-fat, keto, Atkins, Mediterranean, vegetarian, ect. I want to tell
-        you a little secret that really isn't a secret. You ready?
-        <span id="all-work"> They all work. </span>Shocked? I was. I used to be
-        a huge advocate of low-carb and in some degree I still am. But I have
-        been more convince of the importance of knowing how much food you eat.
+        you a little secret that really isn't a secret. You ready? They all
+        work. Shocked? I was. I used to be a huge advocate of low-carb and in
+        some degree I still am. But I have been more convince of the importance
+        of knowing how much food you eat.
       </p>
       <p class="app-use">
         The research, at least in my opinion, has shown that it doesn't really
@@ -30,6 +31,7 @@
           href="https://examine.com/nutrition/low-fat-vs-low-carb-for-weight-loss/"
           target="_blank"
           class="link"
+          alt=""
           >low-carb or low-fat.</a
         >
         If this is true, then the only number we should concern ourselves with
@@ -83,17 +85,25 @@
       </p>
     </div>
     <div id="user-input-div">
-      <label for="food-item"
+      <h3 class="app-use-title">Enter your information Below</h3>
+      <label for="food-item" id="food"
         >Food Item:
         <input type="text" placeholder="Enter the name of food item" />
       </label>
+      <br />
       <label for="number-of-calories"
         >Number of Calories:
-        <input type="text" placeholder="Enter the number of calories" />
+        <input
+          type="number"
+          id="calories"
+          placeholder="Enter the number of calories"
+        />
       </label>
-      <button>Add</button>
+      <br />
+      <button id="add-btn">Add</button>
     </div>
     <div class="user-output-div">
+      <p id="output-para">Food and Calories Consumed</p>
       <ul id="food-item-list"></ul>
       <ul id="calorie-number-list"></ul>
       <button>Calculate Sum of Calories</button>
