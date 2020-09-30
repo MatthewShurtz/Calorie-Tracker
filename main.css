@@ -16,7 +16,7 @@
 body {
   background-color: var(--non-photo-blue);
   text-align: center;
-  margin: -10px -10px 600px -10px;
+  margin: -10px -10px 450px -10px;
 }
 
 header {
@@ -82,7 +82,7 @@ input {
 
 #add-btn {
   font-size: 25px;
-  margin-top: 15px;
+  margin-top: 18px;
   width: 110px;
   height: 42px;
   background-color: var(--baby-blue-eyes);
@@ -127,5 +127,14 @@ ul {
 }
 
 li {
+  font-size: 27px;
+}
+
+#calorie-sum-output {
   font-size: 25px;
+}
+
+#total-calories {
+  font-size: 40px;
+  font-weight: bold;
 }
