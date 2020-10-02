@@ -127,6 +127,12 @@ input {
   cursor: pointer;
 }
 
+@media (max-width: 550px) {
+  #sum-btn {
+    font-size: 20px;
+  }
+}
+
 #sum-btn:hover {
   background-color: lightgreen;
 }
