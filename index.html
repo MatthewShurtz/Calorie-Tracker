@@ -88,14 +88,14 @@
       <h3 class="app-use-title">Enter your information Below</h3>
       <label for="food-item" id="food"
         >Food Item:
-        <input type="text" placeholder="Enter the name of food item" />
+        <input type="text" id="food-input" placeholder="Enter the name of food item" />
       </label>
       <br />
       <label for="number-of-calories"
         >Number of Calories:
         <input
           type="number"
-          id="calories"
+          id="calorie-input"
           placeholder="Enter the number of calories"
         />
       </label>
@@ -106,22 +106,15 @@
       <p class="app-use-title">Food and Calories Consumed</p>
       <div id="output-block"></div>
         <ul id="food-item-list">
-          <li>Apple</li>
-          <li>Cake</li>
-          <li>Coffee</li>
-          <li>Gum</li>
-          <li>Bread</li>
+          <li></li>
         </ul>
         <ul id="calorie-number-list">
-          <li>200</li>
-          <li>500</li>
-          <li>5</li>
-          <li>20</li>
-          <li>100</li>
+          <li></li>
         </ul>
       </div>
       <button id="sum-btn">Calculate Sum of Calories</button>
       <p id="calorie-sum-output">Total calories eaten today: <br> <span id="total-calories">3024</span></p>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
