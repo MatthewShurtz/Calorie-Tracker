@@ -1,118 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <title>Calorie-Tracker</title>
-  </head>
-  <body>
-    <header>
-      <h1 id="title">Calorie Tracker</h1>
-      <p id="subtitle">A simple tool to help understand your eating habits.</p>
-    </header>
-    <div id="app-description">
-      <h3 class="app-use-title">Why So Simple?</h3>
-      <p class="app-use">
-        Looking at the world of nutrutional science, it's easy to get
-        overwhelmed and confused with the conflicting information. The case has
-        been made by varying proponents to go low-carb, vegan, carnivore,
-        low-fat, keto, Atkins, Mediterranean, vegetarian, ect. I want to tell
-        you a little secret that really isn't a secret. You ready? They all
-        work. Shocked? I was. I used to be a huge advocate of low-carb and in
-        some degree I still am. But I have been more convince of the importance
-        of knowing how much food you eat.
-      </p>
-      <p class="app-use">
-        The research, at least in my opinion, has shown that it doesn't really
-        matter what you eat but rather how much you eat. It doesn't matter if
-        you are
-        <a
-          href="https://examine.com/nutrition/low-fat-vs-low-carb-for-weight-loss/"
-          target="_blank"
-          class="link"
-          alt=""
-          >low-carb or low-fat.</a
-        >
-        If this is true, then the only number we should concern ourselves with
-        is the number of total calories we consume.
-      </p>
-      <p class="app-use">
-        I understand if the idea of counting your calories is a chore but it can
-        be really revealing as the amount of food you are eating. You can also
-        identify some eating patterns. Do you eat more on the weekends? Do you
-        have a small breakfast but a giant dinner? Do you snack a lot? Do you
-        consume a lot calories through beavages? Did something happen this week
-        that sent you into a food frenzy? All of these question can be answer
-        simply through tracking. You are you own scientist and test subject. So
-        how can this simple web app help? Good question
-      </p>
-      <h3 class="app-use-title">How to Use This App</h3>
-      <p class="app-use">
-        This app does is add your total calories from the day. There are a
-        couple ways you can maximize its use. One, you can write down everything
-        you eat during the day and after you have had your last meal simple add
-        the food and number of calories into the respective field. Two, you can
-        write everything down you eat along with the number of calories then
-        after your last meal you can add them to this app and it will calories.
-        I would suggest the first method for a week just to get a sense of what
-        you are eating. After that, you can choose either method. You can keep
-        track through a few methods. You can use a piece of paper and a
-        pen/pencil, you can enter everything on a note app on your phone, or you
-        can use your calendar that way you can see how many calories you ate on
-        a particular day.
-      </p>
-      <p class="app-use">
-        For a quick reference on the number of calories in a food item, here is
-        a couple of sources to help you figure that out.
-        <a
-          href="https://www.uncledavesenterprise.com/file/health/Food%20Calories%20List.pdf"
-          target="_blank"
-          class="link"
-          >The first is a pdf.
-        </a>
-        You hit the cmd+f/alt+f to bring up the find box. For example, when you
-        pull up the pdf, hit the cmd+f/alt+f and type in apple. You will see
-        "apple" is highlighted. Note that the portion size might need to be
-        caluculated as well.
-      </p>
-      <p class="app-use">
-        Another is
-        <a href="https://www.calorieking.com/us/en/" class="link"
-          >Calorie King</a
-        >. Simple search for the food item and it will show you different
-        portion sizes and the number of calories
-      </p>
-    </div>
-    <div id="user-input-div">
-      <h3 class="app-use-title">Enter your information Below</h3>
-      <label for="food-item" id="food"
-        >Food Item:
-        <input type="text" id="food-input" placeholder="Enter the name of food item" />
-      </label>
-      <br />
-      <label for="number-of-calories"
-        >Number of Calories:
-        <input
-          type="number"
-          id="calorie-input"
-          placeholder="Enter the number of calories"
-        />
-      </label>
-      <br />
-      <button id="add-btn">Add</button>
-    </div>
-    <div class="user-output-div">
-      <p class="app-use-title">Food and Calories Consumed</p>
-      <div id="output-block"></div>
-        <ul id="food-item-list">
-        </ul>
-        <ul id="calorie-number-list">
-        </ul>
-      </div>
-      <button id="sum-btn">Calculate Sum of Calories</button>
-      <p id="calorie-sum-output">Total calories eaten today: <br> <span id="total-calories"></span></p>
-    </div>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <title>Calorie-Tracker</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Calorie Tracker</h1>
+    <p id="subtitle">A simple tool to help understand your eating habits.</p>
+  </header>
+  <div id="app-description">
+    <h3 class="app-use-title">Why So Simple?</h3>
+    <p class="app-use">
+      Looking at the world of nutrutional science, it's easy to get
+      overwhelmed and confused with the conflicting information. The case has
+      been made by varying proponents to adapt varying diets such as: low-carb, vegan, carnivore,
+      low-fat, keto, Atkins, Mediterranean, vegetarian, ect. I want to tell
+      you a little secret that really isn't a secret. You ready? They all
+      work. Shocked? I was. I used to be a huge advocate of low-carb and in
+      some degree I still am. But I have been more convince of the importance
+      of knowing how much food you eat. In other words, it's more important to know how many calories you are eating.
+    </p>
+    <p class="app-use">
+      The research, at least in my opinion, has shown that it doesn't really
+      matter what you eat but rather how much you eat. It doesn't matter if
+      you are
+      <a href="https://examine.com/nutrition/low-fat-vs-low-carb-for-weight-loss/" target="_blank" class="link"
+        alt="">low-carb or low-fat.</a>
+      If this is true, then the only number we should concern ourselves with
+      is the number of total calories we consume.
+    </p>
+    <p class="app-use">
+      I understand if the idea of counting your calories is a chore but it can
+      be really revealing as the amount of food you are eating. You can also
+      identify some eating patterns. Do you eat more on the weekends? Do you
+      have a small breakfast but a giant dinner? Do you snack a lot? Do you
+      consume a lot calories through beavages? Did something happen this week
+      that sent you into a food frenzy? All of these question can be answered
+      simply through tracking. You are your own scientist and your own test subject. So
+      how can this simple web app help? Good question.
+    </p>
+    <h3 class="app-use-title">How to Use This App</h3>
+    <p class="app-use">
+      This app adds your total calories from the day. There are a
+      couple ways you can maximize its use. One, you can write down everything
+      you eat during the day or you can
+      write everything down you eat along with the number of calories then after you have had your last meal simply add
+      the food and number of calories into their respective fields.
+      I would suggest the first method for a week just to get a sense of what
+      you are eating. After that, you can choose either method. You can track of your food through a few methods. You
+      can use a piece of paper and a
+      pen/pencil, you can enter everything on a note app on your phone, or you
+      can use a calendar that way you can see what food items and how many calories you ate on
+      a particular day.
+    </p>
+    <p class="app-use">
+      For a quick reference on the number of calories in a food item, here is
+      a couple of sources to help you figure that out.
+      <a href="https://www.uncledavesenterprise.com/file/health/Food%20Calories%20List.pdf" target="_blank"
+        class="link">The first is a pdf.
+      </a>
+      You can hit the cmd+f/alt+f to bring up the find box. For example, when you
+      pull up the pdf, hit the cmd+f/alt+f and type in apple. You will see
+      "apple" is highlighted. Note that the portion size might need to be
+      caluculated as well.
+    </p>
+    <p class="app-use">
+      Another is
+      <a href="https://www.calorieking.com/us/en/" target="_blank" class="link">Calorie King</a>. Simply search for the
+      food item and it will show you different
+      portion sizes and the number of calories.
+    </p>
+  </div>
+  <div id="user-input-div">
+    <h3 class="app-use-title">Enter your information Below</h3>
+    <label for="food-item" id="food">Food Item:
+      <input type="text" id="food-input" placeholder="Enter the name of food item" />
+    </label>
+    <br />
+    <label for="number-of-calories">Number of Calories:
+      <input type="number" id="calorie-input" placeholder="Enter the number of calories" />
+    </label>
+    <br />
+    <button id="add-btn">Add</button>
+  </div>
+  <div class="user-output-div">
+    <p class="app-use-title">Food and Calories Consumed</p>
+    <div id="output-block"></div>
+    <ul id="food-item-list">
+    </ul>
+    <ul id="calorie-number-list">
+    </ul>
+  </div>
+  <button id="sum-btn">Calculate Sum of Calories</button>
+  <p id="calorie-sum-output">Total calories eaten today: <br> <span id="total-calories"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
